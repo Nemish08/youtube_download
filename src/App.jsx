@@ -41,7 +41,7 @@ function App() {
 
     // Remove the link from the document
     document.body.removeChild(link);
-    setInputValue("");
+    
   };
 
 
@@ -94,11 +94,7 @@ function App() {
   
      
   }
-  useEffect(() => {
-    if (inputValue === '') {
-     setcount(false)
-    }
-  }, [inputValue]);
+  
 
 
 
@@ -122,10 +118,10 @@ function App() {
                   
                   <h3 >{title}</h3>
 
-                  <button onClick={handleDownload}></button>
+                  <button onClick={handleDownload}>Download</button>
 
                 </div>
-                :<p>nothing</p>
+                :<p/>
               }
           </div>
 
