@@ -113,8 +113,8 @@ function App() {
                 <div>
                   <iframe
                     id="existing-iframe-example"
-                    width="640"
-                    height="360"
+                    width="340"
+                    
                     src={`https://www.youtube.com/embed/${id}`}
                     frameborder="0"></iframe>
                   
