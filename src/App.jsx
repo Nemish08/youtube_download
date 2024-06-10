@@ -7,7 +7,7 @@ import { jsx } from 'react/jsx-runtime';
 function App() {
   
 
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const [id,setId] = useState("");
   const [title,setTitle] = useState("");
   const [count,setcount] = useState(false);
@@ -54,21 +54,21 @@ function App() {
 
     let url_data = inputValue.split("/");
     let url_id = url_data[url_data.length-1].split("?")[0];
-   
+    const data_id = url_id;
     setId(url_id);
     console.log(id);
     
-    get_url();
+    get_url(data_id);
   }
 
-   async function get_url(){
+   async function get_url(data_id){
    
     
 
    
       try {
       
-        const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${id}`;
+        const url = `https://youtube-mp36.p.rapidapi.com/dl?id=${data_id}`;
         console.log(url);
         const options = {
           method: 'GET',
@@ -114,7 +114,6 @@ function App() {
                   <iframe
                     id="existing-iframe-example"
                     width="340"
-                    
                     src={`https://www.youtube.com/embed/${id}`}
                     frameborder="0"></iframe>
                   
