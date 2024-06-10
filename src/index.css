@@ -28,7 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  
+  color:black;
 }
 
 h1{
@@ -36,9 +36,7 @@ h1{
   line-height: 1.1;
  
 }
-h6{
-  color:white;
-}
+
 
 button {
   border-radius: 8px;
